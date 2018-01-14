@@ -41,7 +41,7 @@ namespace MediaListingApp.Views
             ContentView = new UIScrollView();
             ContentView.BackgroundColor = UIColor.White;
             ContentView.ScrollEnabled = true;
-            ContentView.ContentSize = new SizeF(width, 60f + (float)(width * 0.56) + 72f);
+            ContentView.ContentSize = new SizeF(width, 80f + (float)(width * 0.56) + 72f);
             View.Add(ContentView);
             ContentView.TranslatesAutoresizingMaskIntoConstraints = false;
             NSLayoutConstraint.Create(ContentView, NSLayoutAttribute.Left, NSLayoutRelation.Equal, View, NSLayoutAttribute.Left, 1.0f, 0f).Active = true;
@@ -56,7 +56,7 @@ namespace MediaListingApp.Views
             ContentView.AddSubview(TitleLabel);
             TitleLabel.TranslatesAutoresizingMaskIntoConstraints = false;
             NSLayoutConstraint.Create(TitleLabel, NSLayoutAttribute.Left, NSLayoutRelation.Equal, ContentView, NSLayoutAttribute.Left, 1.0f, 10f).Active = true;
-            NSLayoutConstraint.Create(TitleLabel, NSLayoutAttribute.Top, NSLayoutRelation.Equal, ContentView, NSLayoutAttribute.Top, 1.0f, 10f).Active = true;
+            NSLayoutConstraint.Create(TitleLabel, NSLayoutAttribute.Top, NSLayoutRelation.Equal, ContentView, NSLayoutAttribute.Top, 1.0f, 30f).Active = true;
             NSLayoutConstraint.Create(TitleLabel, NSLayoutAttribute.Width, NSLayoutRelation.Equal, ContentView, NSLayoutAttribute.Width, 1.0f, -50f).Active = true;
             NSLayoutConstraint.Create(TitleLabel, NSLayoutAttribute.Height, NSLayoutRelation.Equal, ContentView, NSLayoutAttribute.Height, 0f, 28f).Active = true;
 
@@ -65,7 +65,7 @@ namespace MediaListingApp.Views
             ContentView.AddSubview(CloseButton);
             CloseButton.TranslatesAutoresizingMaskIntoConstraints = false;
             NSLayoutConstraint.Create(CloseButton, NSLayoutAttribute.Left, NSLayoutRelation.Equal, TitleLabel, NSLayoutAttribute.Right, 1.0f, 10f).Active = true;
-            NSLayoutConstraint.Create(CloseButton, NSLayoutAttribute.Top, NSLayoutRelation.Equal, ContentView, NSLayoutAttribute.Top, 1.0f, 12f).Active = true;
+            NSLayoutConstraint.Create(CloseButton, NSLayoutAttribute.Top, NSLayoutRelation.Equal, ContentView, NSLayoutAttribute.Top, 1.0f, 32f).Active = true;
             NSLayoutConstraint.Create(CloseButton, NSLayoutAttribute.Width, NSLayoutRelation.Equal, ContentView, NSLayoutAttribute.Width, 0f, 20f).Active = true;
             NSLayoutConstraint.Create(CloseButton, NSLayoutAttribute.Height, NSLayoutRelation.Equal, ContentView, NSLayoutAttribute.Height, 0f, 20f).Active = true;
 
